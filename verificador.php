@@ -20,8 +20,8 @@ class Verificador{
             for($loop = 4; $loop<12;$loop++){$D1 += ($CNPJ[$loop]*($loop-2));}
             for($loop = 0; $loop<5;$loop++){$D2 += ($CNPJ[$loop]*($loop+5));}
             for($loop = 5; $loop<13;$loop++){$D2 += ($CNPJ[$loop]*($loop-3));}
-            if($CNPJ[12].''.$CNPJ[13] == ($D1%11).''.($D2%11)){return 'true';}else{return 'false';}
-        }else{return 'false'; }
+            if($CNPJ[12].''.$CNPJ[13] == ($D1%11).''.($D2%11)){return true;}else{return false;}
+        }else{return false; }
     }
 }
 ?>
